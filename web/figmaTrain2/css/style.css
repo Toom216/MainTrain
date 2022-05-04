@@ -1,0 +1,242 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 24px;
+    color: #252b42;
+    font-family: "Montserrat";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*------------------------------------------------------------------------------------*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1050px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/*---header---------------------------------------------------------------------------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: inherit;
+}
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 50px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+.menu {
+    padding: 5px 0px;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+    padding: 0px 21px 0px 0px;
+}
+.menu__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(24 / 14 * 100%);
+    color: #737373;
+}
+
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 20px;
+    }
+}
+/*---page---------------------------------------------------------------------------------*/
+.page {
+    flex: 1 1 auto;
+}
+
+/*---mainblock---------------------------------------------------------------------------------*/
+
+.page__main-block {
+}
+.main-block {
+    position: relative;
+}
+.main-block__container {
+}
+.main-block__body {
+    padding: 180px 0px 180px 0px;
+    max-width: 509px;
+}
+.main-block__body > *:not(:last-child){
+margin: 0px 0px 35px 0px;
+}
+.main-block__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 138%;
+    letter-spacing: 0.2px;
+    color: #252b42;
+}
+.main-block__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.main-block__buttons {
+}
+.main-block__button {
+    background: #ff7b47;
+    border-radius: 37px;
+    display: flex;
+    min-height: ;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 36px;
+}
+
+.main-block__button-border {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    border: 1px solid #0D5C63;
+    color: #0D5C63;
+    box-sizing: border-box;
+    border-radius: 37px;
+    padding: 10px 36px 10px 36px;
+}
+
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*---footer---------------------------------------------------------------------------------*/
+.footer {
+}

@@ -1,0 +1,44 @@
+.div1 {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .div1 {
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.div1_1 {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 38, 255);
+    border: 7px solid rgb(255, 0, 0);
+}
+input {
+  display: none;
+}
+input:checked + label > div {
+  background-color: red;
+}
+
+
+.div1_2 {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 251, 0);
+    border: 7px solid rgb(0, 0, 0);
+}
+
+.div1_3 {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 255, 13);
+    border: 7px solid rgb(25, 0, 255);
+}
+
+
+

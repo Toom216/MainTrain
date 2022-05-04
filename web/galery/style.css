@@ -1,0 +1,15 @@
+.btn {
+  height: 260px;
+}
+
+.carousel{
+  width: 30%;
+  height: 30%;
+  margin: auto;
+}
+
+.input-area {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}

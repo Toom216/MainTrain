@@ -1,0 +1,305 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "El Messiri";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #162831;
+  flex-direction: column;
+}
+._container {
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.btn {
+  width: 155px;
+  height: 36px;
+  background: #018abe;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 15px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.globaltitle {
+  display: flex;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 140%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+@media (max-width: 500px) {
+  .globaltitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+  .globaltitle::after,
+  .globaltitle::before {
+    margin: 0px 0px 0px 10px;
+  }
+}
+.globaltitle::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 14px;
+  background: url("/web/figmaTrain1/images/RectangleSessions.svg") no-repeat;
+  transform: scaleX(-1);
+  margin: 0px 0px 0px 45px;
+}
+.globaltitle::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 14px;
+  background: url("/web/figmaTrain1/images/RectangleSessions.svg") no-repeat;
+  margin: 0px 45px 0px 0px;
+}
+
+/*---HEADER----------------------------------------------------------------------*/
+.header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  flex-wrap: wrap;
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.header__menu {
+}
+@media (max-width: 950px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+  .header__logo,
+  .menu,
+  .menu__item {
+    margin: 10px;
+    padding: 0px 0px 25px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.menu {
+}
+.menu__list {
+  flex-wrap: wrap;
+  display: flex;
+}
+.menu__item {
+  padding: 0px 50px 0px 0px;
+}
+.menu__item:last-child {
+  padding: 0px;
+}
+.menu__link {
+  color: #ffffff;
+  line-height: 135%;
+  font-weight: 400;
+}
+.header-button {
+}
+
+/*---AQUATHERAPY----------------------------------------------------------------------*/
+.main__aquatherapy {
+  display: flex;
+  padding: 0px 0px 150px 0px;
+}
+@media (max-width: 500px) {
+  .aquatherapy {
+    padding: 0px 0px 30px 0px;
+  }
+}
+.aquatherapy__image img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.aquatherapy__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aquatherapy__items {
+  position: absolute;
+  z-index: 3;
+}
+.aquatherapy__uptitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.aquatherapy__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
+}
+
+@media (max-width: 768px) {
+  .aquatherapy__uptitle {
+    font-size: 18px;
+  }
+  .aquatherapy__title {
+    font-size: 36px;
+  }
+}
+/*---sessions-------------------------------------------------------------------*/
+
+.main__sessions {
+}
+.main__sessions-container {
+}
+.sessions__header {
+}
+.sessions__body {
+  display: flex;
+}
+.sessions__body-columns {
+  padding: 7.5px;
+  flex: 0 1 33.333%;
+}
+
+.sessions__body-column {
+}
+.sessions__body-image {
+}
+.sessions__body-info {
+  bottom: 8px;
+  left: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+/*---FOOTER----------------------------------------------------------------------*/
+.footer {
+  right: 0;
+  bottom: 0;
+}
+
+.footer__container {
+}
+.footer__elements {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+}
+.footer__copyr {
+}
+.footer__madein {
+}

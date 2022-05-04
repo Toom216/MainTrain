@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(226, 226, 226);
+}
+.inputarea {
+
+}
+.button {
+  width: 100px;
+  height: 20px;
+}
