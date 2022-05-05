@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round:regular" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="clock">
+                <div class="clock__container _container">
+                    <div class="clock__items _items">
+						<div class="clock__title">Current Time</div>
+                        <p class="clock__text" id="clock" onload="clockCurrent()"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="timer__container _container">
+                    <div class="timer__items _items">
+                        <div class="timer__title"><span>New Year</span> in</div>
+                        <p class="timer__text" id="timer"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="stopwatch">
+                <div class="stopwatch__container _container">
+                    <div class="stopwatch__items _items">
+                        <p class="stopwatch__text" id="stopwatch">123456stopwatch</p>
+                        <button class="stopwatch__button-start _btn" id="startButton">START</button>
+                        <button class="stopwatch__button-stop _btn" id="stopButton">STOP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
