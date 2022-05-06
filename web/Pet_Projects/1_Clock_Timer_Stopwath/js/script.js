@@ -43,3 +43,45 @@ function count() {
 setInterval(count, 1000);
 
 /*----------------------------------------------------------------------*/
+const watch = document.getElementById("stopwatch");
+
+let milliseconds = 0;
+let timer;
+
+const startWatch = () => {
+    watch.classList.remove("paused");
+    clearInterval(timer);
+    timer = setInterval(() => {
+        milliseconds += 10;
+        let dateTimer = new Date(milliseconds);
+        stopwatch.innerText =
+            ("0" + dateTimer.getUTCHours()).slice(-2) +
+            ":" +
+            ("0" + dateTimer.getUTCMinutes()).slice(-2) +
+            ":" +
+            ("0" + dateTimer.getUTCSeconds()).slice(-2) +
+            ":" +
+            ("0" + dateTimer.getUTCMilliseconds()).slice(-3, -1);
+    }, 10);
+};
+
+const pausedWatch = () => {
+    stopwatch.classList.add("paused");
+    clearInterval(timer);
+};
+
+const resetWatch = () => {
+    stopwatch.classList.remove("paused");
+    clearInterval(timer);
+    milliseconds = 0;
+    stopwatch.innerText = "00:00:00:00";
+};
+
+document.addEventListener("click", (e) => {
+    const element = e.target;
+    if (element.id === "startButton") startWatch();
+    if (element.id === "pauseButton") pausedWatch();
+    if (element.id === "resetButton") resetWatch();
+});
+
+/*----------------------------------------------------------------------*/
