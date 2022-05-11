@@ -1,0 +1,156 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Koulen";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*-------------------------------------------------------*/
+.main {
+    height: 100%;
+    background-color: rgb(17, 22, 0);
+}
+._container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+._btn {
+    font-size: 20px;
+    padding: 13% 10%;
+    border-radius: 100%;
+    background-color: rgb(46, 146, 133);
+    transition: 0.3s;
+}
+._btn:hover {
+    transform: scale(1.05, 1.05);
+}
+._btn:active {
+    transform: scale(1, 1);
+}
+/*-------------------------------------------------------*/
+
+.guess__container {
+}
+.guess__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.guess__item-title {
+    margin-bottom: 15px;
+    color: rgb(2, 143, 143);
+}
+.guess__item-input {
+    margin-bottom: 15px;
+    padding: 0px 0px 0px 5px;
+    border-radius: 15px;
+    color: rgb(182, 182, 182);
+    background-color: rgb(53, 53, 53);
+    height: 40px;
+    width: 65px;
+    border: 2px solid rgb(80, 56, 56);
+}
+.guess__item-button {
+}
+
+.guess__item-answer {
+    display: flex;
+    font-size: 70px;
+}
+
+.guess__item-aftercontainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.answer__correct {
+    overflow: hidden;
+    color: rgb(43, 131, 35);
+}
+
+.answer__wrong {
+    overflow: hidden;
+    color: rgb(122, 38, 38);
+}
+/*-------------------------------------------------------*/
