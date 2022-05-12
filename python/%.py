@@ -1,5 +1,5 @@
 import datetime
 
-t = datetime.datetime.now()
+tt = datetime.datetime.now()
 
-print(t.strftime('%d-%m-%Y %H:%M:%S'))
+print(tt.strftime('%d-%m-%Y %H:%M:%S'))
