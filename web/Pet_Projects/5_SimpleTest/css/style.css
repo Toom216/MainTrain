@@ -1,0 +1,153 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Koulen";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*--------------------------------------------------------------*/
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(27, 46, 54);
+    padding: 0px 10px;
+}
+._container {
+}
+
+._btn {
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: rgb(52, 151, 155);
+    color: rgb(13, 0, 87);
+    transition: 0.3s;
+}
+._btn:hover {
+    transform: scale(1.05, 1.05);
+}
+._btn:active {
+    transform: scale(1, 1);
+}
+/*--------------------------------------------------------------*/
+
+.test__container {
+}
+.test__items {
+    display: flex;
+    flex-direction: column;
+}
+.test__item-question {
+    margin: 10px 0px 0px 0px;
+    font-size: 20px;
+    color: #9bad34;
+}
+.test__item-input {
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 5px 0px 15px 0px;
+    color: aliceblue;
+    font-size: 16px;
+    background-color: rgb(33, 94, 73);
+}
+
+.test__item-input:focus {
+    transition: 0.2s;
+    transform: scale(1.05, 1.05);
+}
+
+.test__item-answersCount {
+    font-size: 24px;
+    color: rgb(194, 191, 45);
+}
+
+.border__red {
+    border: 2px solid rgb(177, 0, 0);
+}
+.border__green {
+    border: 2px solid rgb(14, 170, 0);
+}
+
+.test__item-sendBtn {
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.test__item-tryAgainBtn {
+    padding: 0px 10px;
+}
+
+/*--------------------------------------------------------------*/
