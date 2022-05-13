@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Koulen:regular" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="main">
-		<div class="calculator__container _container">
-			<div class="calculator__items-inputs">
-				<div class="calculator__item-title">calculator</div>
-				<input type="text" placeholder="first number" class="calculator__item-first-input _input">
-				<input type="text" placeholder="second number" class="calculator__item-second-input _input">
-			</div>
-			<div class="calculator__items-operations">
-				<button class="calculator__item-operation _btn" id="op1">+</button>
-				<button class="calculator__item-operation _btn" id="op2">-</button>
-				<button class="calculator__item-operation _btn" id="op3">*</button>
-				<button class="calculator__item-operation _btn" id="op4">/</button>
-				<button class="calculator__item-operation _btn" id="op5">%</button>
-				<div class="calculator__item-title">choose operation</div>
-			</div>
-			<div class="calculator__items">
-				<div class="calculator__item-answer"></div>
-			</div>
-		</div>
-	</div>
-	<script src="js/script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Koulen:regular" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="calculator__container _container">
+                <div class="calculator__items-inputs">
+                    <div class="calculator__item-title">calculator</div>
+                    <input type="number" placeholder="first number" id="n1" class="calculator__item-first-input _input" />
+                    <input type="number" placeholder="second number" id="n2" class="calculator__item-second-input _input" />
+                </div>
+                <div class="calculator__items-operations">
+                    <div class="calculator__item-title">choose operation</div>
+                    <button class="calculator__item-operation _btn" id="op1">+</button>
+                    <button class="calculator__item-operation _btn" id="op2">-</button>
+                    <button class="calculator__item-operation _btn" id="op3">*</button>
+                    <button class="calculator__item-operation _btn" id="op4">/</button>
+                    <button class="calculator__item-operation _btn" id="op5">%</button>
+                </div>
+                <div class="calculator__item-eqal">=</div>
+                <div class="calculator__items">
+                    <div class="calculator__item-answer" id="answer"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
 </html>
